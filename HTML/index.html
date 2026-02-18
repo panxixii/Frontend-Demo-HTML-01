@@ -8,12 +8,42 @@
 <body>
   <form action="#">
     <h1>青春不常在，抓紧谈恋爱</h1>
-    性别
+    <span id="FormUserGender">性别</span>
     <label for="Male">男</label>
     <input type="radio" name="FormUserGender" id="Male">
     <label for="Female">女</label>
     <input type="radio" name="FormUserGender" id="Female">
-
+    <span id="Birthday">生日</span>
+    <select name="FormUserBirthday" id="BirthdayYear" aria-labelledby="Birthday">
+      <option value="" disabled selected>请选择出生年</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+    </select>
+    <select name="FormUserBirthday" id="BirthdayMonth" aria-labelledby="Birthday" >
+      <option value="" disabled selected>请选择出生月</option>
+      <option value="1">2001</option>
+      <option value="2">2002</option>
+      <option value="3">2003</option>
+      <option value="4">2004</option>
+      <option value="5">2005</option>
+      <option value="6">2006</option>
+      <option value="7">2007</option>
+    </select>
+    <select name="FormUserBirthday" id="BirthdayDay" aria-label="尝试请选择出生日">
+      <option value="" disabled selected>请选择出生日</option>
+      <option value="1">2001</option>
+      <option value="2">2002</option>
+      <option value="3">2003</option>
+      <option value="4">2004</option>
+      <option value="5">2005</option>
+      <option value="6">2006</option>
+      <option value="7">2007</option>
+    </select>
   </form>
 </body>
 </html>
