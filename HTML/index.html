@@ -8,89 +8,153 @@
 <body>
   <form action="#">
     <h4>青春不常在，抓紧谈恋爱</h4>
-    <span id="FormUserGender">性别</span>&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="radio" name="FormUserGender" id="Male">
-    <label for="Male">
-      <img img width="16px" height="16px" src="../image/icons/male.png">
-      男</label>
-    <input type="radio" name="FormUserGender" id="Female">
-    <label for="Female"><img width="16px" height="16px" src="../image/icons/female.png">女</label>
-    <br/>
-    <span id="Birthday">生日</span>&emsp;&emsp;&emsp;&emsp;&emsp;
-    <select name="FormUserBirthday" id="BirthdayYear" aria-labelledby="Birthday">
-      <option value="" disabled selected>请选择出生年</option>
-      <option value="2001">2001</option>
-      <option value="2002">2002</option>
-      <option value="2003">2003</option>
-      <option value="2004">2004</option>
-      <option value="2005">2005</option>
-      <option value="2006">2006</option>
-      <option value="2007">2007</option>
-    </select>
-    <select name="FormUserBirthday" id="BirthdayMonth" aria-labelledby="Birthday" >
-      <option value="" disabled selected>请选择出生月</option>
-      <option value="1">2001</option>
-      <option value="2">2002</option>
-      <option value="3">2003</option>
-      <option value="4">2004</option>
-      <option value="5">2005</option>
-      <option value="6">2006</option>
-      <option value="7">2007</option>
-    </select>
-    <select name="FormUserBirthday" id="BirthdayDay" aria-label="尝试请选择出生日">
-      <option value="" disabled selected>请选择出生日</option>
-      <option value="1">2001</option>
-      <option value="2">2002</option>
-      <option value="3">2003</option>
-      <option value="4">2004</option>
-      <option value="5">2005</option>
-      <option value="6">2006</option>
-      <option value="7">2007</option>
-    </select>
-    <br/>
-    <span id="Address">所在地区</span>&emsp;&emsp;&emsp;
-    <input type="text" placeholder="请输入所在地区">
-    <br/>
-    <span id="MaritalStatus">婚姻状况</span>&emsp;&emsp;&emsp;
-    <input type="radio" name="FormMaritalStatus" id="spinsterhood">
-    <label for="spinsterhood">未婚</label>
-    
-    <input type="radio" name="FormMaritalStatus" id="married">
-    <label for="married">已婚</label>
-    
-    <input type="radio" name="FormMaritalStatus" id="divorce">
-    <label for="divorce">离婚</label>
-    <br />
-    <span id="EducationBackground">学历</span>&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="text" placeholder="请输入学历">
-    <br />
-    <span id="FavoredType">喜欢的类型</span>&emsp;&emsp;
-    <label for="spinsterhood">11</label>
-    <input type="checkbox" name="FormMaritalStatus" id="spinsterhood">
-    <label for="spinsterhood">11</label>
-
-    
-    <input type="checkbox" name="FormMaritalStatus" id="married">
-    <label for="married">22</label>
-    
-    <input type="checkbox" name="FormMaritalStatus" id="divorce">
-    <label for="divorce">33</label>
-    <br />
-    <span id="SelfIntroduction">自我介绍</span>&emsp;&emsp;&emsp;
-    <textarea rows="2" cols="10" placeholder="请输入自我介绍"></textarea>
-    <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="submit" value="免费注册">
-    <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="checkbox"><span>我同意注册条款和会员加入标准</span>
-    <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <a href="#">我是会员，立即登录</a>
-    <br />
-    <h1>我承诺</h1>
-    <ul>
-        <li>年满18岁，单身</li>
-        <li>抱着严谨的态度</li>
-        <li>真诚寻找另一半</li>
-    </ul>
+    <table width="500px">
+      <!-- 性别 -->
+      <tr>
+        <td>
+          性别
+        </td>
+        <td>
+          <input type="radio" name="FormUserGender" id="Male">
+          <label for="Male">
+            <img img width="16px" height="16px" src="../image/icons/male.png">
+            男
+          </label>
+          <input type="radio" name="FormUserGender" id="Female">
+          <label for="Female">
+            <img width="16px" height="16px" src="../image/icons/female.png">
+            女
+          </label>
+        </td>
+      </tr>
+      <!-- 生日 -->
+      <tr>
+        <td>
+          生日
+        </td>
+        <td>
+          <select name="FormUserBirthday" id="BirthdayYear" aria-labelledby="Birthday">
+            <option value="" disabled selected>请选择出生年</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+          </select>
+          <select name="FormUserBirthday" id="BirthdayMonth" aria-labelledby="Birthday">
+            <option value="" disabled selected>请选择出生月</option>
+            <option value="1">2001</option>
+            <option value="2">2002</option>
+            <option value="3">2003</option>
+            <option value="4">2004</option>
+            <option value="5">2005</option>
+            <option value="6">2006</option>
+            <option value="7">2007</option>
+          </select>
+          <select name="FormUserBirthday" id="BirthdayDay" aria-label="尝试请选择出生日">
+            <option value="" disabled selected>请选择出生日</option>
+            <option value="1">2001</option>
+            <option value="2">2002</option>
+            <option value="3">2003</option>
+            <option value="4">2004</option>
+            <option value="5">2005</option>
+            <option value="6">2006</option>
+            <option value="7">2007</option>
+          </select>
+        </td>
+      </tr>
+      <!-- 所在地区 -->
+      <tr>
+        <td>
+          所在地区
+        </td>
+        <td>
+          <input type="text" placeholder="请输入所在地区">
+        </td>
+      </tr>
+      <!-- 婚姻状况 -->
+      <tr>
+        <td>
+          婚姻状况
+        </td>
+        <td>
+          <input type="radio" name="FormMaritalStatus" id="spinsterhood">
+          <label for="spinsterhood">未婚</label>
+          
+          <input type="radio" name="FormMaritalStatus" id="married">
+          <label for="married">已婚</label>
+          
+          <input type="radio" name="FormMaritalStatus" id="divorce">
+          <label for="divorce">离婚</label>
+        </td>
+      </tr>
+      <!-- 学历 -->
+      <tr>
+        <td>
+          学历
+        </td>
+        <td>
+          <input type="text" placeholder="请输入学历">
+        </td>
+      </tr>
+      <!-- 喜欢的类型 -->
+      <tr>
+        <td>
+          喜欢的类型
+        </td>
+        <td>
+          <input type="checkbox" name="FormMaritalStatus" id="spinsterhood">
+          <label for="spinsterhood">11</label>
+          
+          
+          <input type="checkbox" name="FormMaritalStatus" id="married">
+          <label for="married">22</label>
+          
+          <input type="checkbox" name="FormMaritalStatus" id="divorce">
+          <label for="divorce">33</label>
+        </td>
+      </tr>
+      <!-- 自我介绍 -->
+      <tr>
+        <td>
+          自我介绍
+        </td>
+        <td>
+          <textarea rows="2" cols="10" placeholder="请输入自我介绍"></textarea>
+        </td>
+      </tr>
+      <!-- 免费注册 -->
+      <tr>
+        <td>
+        </td>
+        <td>
+          <input type="checkbox"><span>我同意注册条款和会员加入标准</span>
+        </td>
+      </tr>
+      <!-- 会员登录 -->
+      <tr>
+        <td>
+        </td>
+        <td>
+          <a href="#">我是会员，立即登录</a>        
+        </td>
+      </tr>
+      <!-- 承诺 -->
+      <tr>
+        <td>
+        </td>
+        <td>
+          <h1>我承诺</h1>
+          <ul>
+            <li>年满18岁，单身</li>
+            <li>抱着严谨的态度</li>
+            <li>真诚寻找另一半</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </form>
 </body>
 </html>
